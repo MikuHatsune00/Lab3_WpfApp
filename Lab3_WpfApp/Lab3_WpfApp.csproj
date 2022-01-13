@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\bold2.png" />
+    <None Remove="Data\bold3.png" />
+    <None Remove="Data\italic2.png" />
+    <None Remove="Data\italic3.png" />
+    <None Remove="Data\text_bold.png" />
+    <None Remove="Data\text_bold1.png" />
+    <None Remove="Data\text_italic.png" />
+    <None Remove="Data\text_italic1.png" />
+    <None Remove="Data\text_underline.png" />
+    <None Remove="Data\text_underline1.png" />
+    <None Remove="Data\underline2.png" />
+    <None Remove="Data\underline3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\bold2.png" />
+    <Resource Include="Data\bold3.png" />
+    <Resource Include="Data\italic2.png" />
+    <Resource Include="Data\italic3.png" />
+    <Resource Include="Data\text_bold1.png" />
+    <Resource Include="Data\text_italic1.png" />
+    <Resource Include="Data\text_underline1.png" />
+    <Resource Include="Data\underline2.png" />
+    <Resource Include="Data\underline3.png" />
+  </ItemGroup>
+
+</Project>
